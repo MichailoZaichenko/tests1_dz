@@ -3,12 +3,12 @@ import program
 
 class MyTestClass(unittest.TestCase):
     def test_sum(self):
-        summ = program.Numbers(1,2,3)
+        summ = program.Numbers(1,2,3,4,5)
         result = summ.Sum()
-        self.assertEqual(6, result)
-        summ = program.Numbers(3,6,9)
+        self.assertEqual(15, result)
+        summ = program.Numbers(3,6,9,35,345,234)
         result = summ.Sum()
-        self.assertEqual(18, result)
+        self.assertEqual(632, result)
 
     def test_average(self):
         test_average = program.Numbers(1,2,3)
