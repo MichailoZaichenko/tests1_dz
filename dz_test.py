@@ -19,17 +19,17 @@ class MyTestClass(unittest.TestCase):
         self.assertEqual(4644, result)
 
     def test_min(self):
-        test_min = program.Numbers(1,2,3)
+        test_min = program.Numbers(1,2,3,234,24,1235,221,0)
         result = test_min.Min()
-        self.assertEqual(1, result)
-        test_min = program.Numbers(34234,234,43)
+        self.assertEqual(0, result)
+        test_min = program.Numbers(34234,234,43,324,243,12,13)
         result = test_min.Min()
-        self.assertEqual(43, result)
+        self.assertEqual(12, result)
 
     def test_max(self):
-        test_max = program.Numbers(1,2,3)
+        test_max = program.Numbers(1,2,3,435,1321,34)
         result = test_max.Max()
-        self.assertEqual(3, result)
-        test_max = program.Numbers(234234,4352,5)
+        self.assertEqual(1321, result)
+        test_max = program.Numbers(234234,4352,5,34,0,0)
         result = test_max.Max()
         self.assertEqual(234234, result)
